@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Energy Consumption Predictor</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #2a52be;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    .container {
+      padding: 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2a52be;
+      margin-top: 40px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e0e7ff;
+    }
+
+    .tech-list, .improve-list {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #2a52be;
+      color: white;
+      padding: 15px 30px;
+      margin-top: 30px;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
+    .btn:hover {
+      background-color: #1f3a90;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🔌 Energy Consumption Predictor</h1>
+    <p>Predict building energy usage with machine learning for smarter sustainability</p>
+  </header>
+
+  <div class="container">
+    <h2>📌 Project Overview</h2>
+    <p>
+      The Energy Consumption Predictor is a regression-based ML model that estimates building energy usage based on user inputs. Ideal for facility managers, energy analysts, and sustainability researchers looking to improve energy planning.
+    </p>
+
+    <h2>🧠 Features Used</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Building Type</td><td>Categorical feature specifying the type of building (e.g., Residential, Commercial).</td></tr>
+        <tr><td>Square Footage</td><td>Total area of the building in square feet.</td></tr>
+        <tr><td>Number of Occupants</td><td>Total number of people regularly occupying the building.</td></tr>
+        <tr><td>Appliances Used</td><td>Count of energy-consuming appliances installed.</td></tr>
+        <tr><td>Average Temperature</td><td>Average outdoor temperature in °C.</td></tr>
+        <tr><td>Day of Week</td><td>Categorical value indicating the day (Monday to Sunday).</td></tr>
+        <tr><td><strong>Energy Consumption</strong></td><td><strong>Target Variable</strong> – Measured in kWh (kilowatt-hours).</td></tr>
+      </tbody>
+    </table>
+
+    <h2>🛠️ Technologies Used</h2>
+    <ul class="tech-list">
+      <li>Python</li>
+      <li>Pandas / NumPy</li>
+      <li>Matplotlib / Seaborn</li>
+      <li>Scikit-learn (Linear Regression, StandardScaler)</li>
+      <li>Flask</li>
+      <li>HTML / CSS</li>
+    </ul>
+
+    <h2>🚀 Future Improvements</h2>
+    <ul class="improve-list">
+      <li>Incorporate time-series data (hourly/daily usage)</li>
+      <li>Use XGBoost or Random Forest for improved accuracy</li>
+      <li>Deploy to cloud (AWS, Render, or Heroku)</li>
+    </ul>
+
+    <a href="/form" class="btn">🔮 Predict Now</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Energy Consumption Predictor | Built with 💡 and 💻
+  </footer>
+</body>
+</html>

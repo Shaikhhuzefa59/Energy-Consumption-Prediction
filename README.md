@@ -28,7 +28,7 @@ Matplotlib / Seaborn
 
 Scikit-learn (Linear/StandardScaler)
 
-Flask (if you have a web app interface)
+Flask
 
 HTML/CSS (for frontend form)
 
